@@ -1,67 +1,52 @@
 # Deep Learning and Machine Learning Algorithms
 
-Welcome to this repository! Here, we're building a collection of implementations for various deep learning and machine learning algorithms. Our goal is to provide clear, concise, and hopefully useful code examples in multiple programming languages, including C++, Python, and maybe even some others down the line.
+Welcome to this here repository! We're building a collection of implementations for various deep learning and machine learning algorithms in different programming languages. Our main focus right now is C++, but we plan to add Python and maybe even other languages down the line.
 
 ## Languages
 
-Currently, you'll find implementations in the following languages:
+Currently, you'll find implementations primarily in:
 
-* **C++:** For performance-critical tasks and understanding lower-level implementations.
-* **Python:** For rapid prototyping and leveraging its rich ecosystem of libraries.
-* **[Other languages will be added here as they are implemented]**
+* **C++:** For performance-oriented implementations and a deeper understanding of the algorithms. This includes some CUDA-accelerated code.
+* **Python:** We'll be adding Python implementations for easier experimentation and integration with popular ML libraries.
+* **[Other languages might be added later]**
 
 ## Algorithms Implemented
 
-Here's a list of the algorithms we've implemented so far. Feel free to explore the directories for each language to find the corresponding code.
+Here's a list of the algorithms that have been implemented so far, organized by category:
 
-### C++
+### Supervised Learning
 
-* **ReLU Activation Function:** A CUDA-based implementation of the Rectified Linear Unit activation function for neural networks.
-* **Matrix Transpose:** A CUDA program to efficiently transpose matrices on the GPU.
-* **Multi-Head Self-Attention:** A basic C++ implementation illustrating the core concepts (still under development and might have a bug or two!).
+* **Regression:**
+    * **Linear Regression (C++)**
+* **Classification:**
+    * **Logistic Regression (Directory created)**
+    * **K-Nearest Neighbors (KNN) (Directory created)**
+    * **Support Vector Machines (SVM) (Directory created)**
+    * **Naive Bayes (Directory created)**
+    * **Decision Tree Classification (Directory created)**
+    * **Random Forest Classification (Directory created)**
+    * **Gradient Boosting Classification (e.g., XGBoost, LightGBM) (Directory created)**
 
-### Python
+### Unsupervised Learning
 
-* **[Python implementations will be added here]**
+* **Clustering:**
+    * **K-Means Clustering (C++)**
+    * **Hierarchical Clustering (Directory created)**
+    * **DBSCAN (Directory created)**
+* **Dimensionality Reduction:**
+    * **Principal Component Analysis (PCA) (Directory created)**
+    * **t-distributed Stochastic Neighbor Embedding (t-SNE) (Directory created)**
 
-### [Other Languages]
+### Neural Networks
 
-* **[Implementations in other languages will be added here]**
+* **Core Layers/Functions:**
+    * **ReLU Activation Function (C++)**
+    * **Matrix Transpose (C++ CUDA)** - This implementation transposes a matrix of 32-bit floating-point numbers on a GPU. See the `Matrix-Transpose` directory.
+    * **Multi-Head Self-Attention (C++)**
+* **Simple Networks:**
+    * **Simple Convolutional Neural Network (CNN) (C++)** - A basic CNN with a single convolutional layer and ReLU activation.
+    * **Recurrent Neural Networks (RNNs) - Basic Implementations (C++)** - A simple RNN implementation demonstrating the core concepts.
 
-## Contribution Guidelines
+## Directory Structure
 
-We warmly welcome contributions from the community! If you'd like to add an implementation of an algorithm, fix a bug, or improve the existing code, please follow these guidelines:
-
-1.  **Fork the repository.**
-2.  **Create a new branch** for your changes (`git checkout -b feature/your-algorithm`).
-3.  **Implement the algorithm** in your chosen language, making sure to follow good coding practices and add comments where necessary.
-4.  **Include a clear explanation** of the algorithm and how to use your implementation (maybe a simple example in the `main` function or a separate test file).
-5.  **Make sure your code is well-tested.**
-6.  **Submit a pull request** with a clear description of your changes.
-
-We're particularly interested in implementations of fundamental algorithms like:
-
-* Linear Regression
-* Logistic Regression
-* K-Means Clustering
-* Support Vector Machines (SVM)
-* Convolutional Neural Networks (CNNs) - basic layers
-* Recurrent Neural Networks (RNNs) - basic implementations
-
-But hey, we're open to all sorts of contributions!
-
-## Usage
-
-Each algorithm's implementation will typically have its own directory under the respective language folder. Inside, you'll find the source code and potentially some instructions on how to compile and run it. For example, for the C++ CUDA programs, you'll likely need the NVIDIA CUDA compiler (`nvcc`).
-
-For Python implementations, you'll generally be able to run the scripts directly using `python your_script.py`.
-
-Please refer to the specific README file (if any) within each algorithm's directory for detailed usage instructions.
-
-## License
-
-This repository is intended to be an open-source learning resource. We encourage you to use and adapt the code freely. We will likely choose an open-source license soon, such as the MIT License or Apache License 2.0.
-
-## Get Involved!
-
-We're excited to build this resource together. If you have any questions, suggestions, or just wanna chat about machine learning, feel free to open an issue or start a discussion. Lets learn together!
+The repository is organized as follows:
