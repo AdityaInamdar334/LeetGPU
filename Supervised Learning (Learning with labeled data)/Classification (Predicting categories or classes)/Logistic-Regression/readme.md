@@ -1,6 +1,6 @@
-Here's a basic `README.md` for your logistic regression implementation:
 
-```markdown
+
+
 # Logistic Regression Implementation
 
 This is a basic implementation of **Logistic Regression** using Python and the `scikit-learn` library. The implementation demonstrates how to train a logistic regression model on a dataset, make predictions, and evaluate the model's performance.
@@ -81,5 +81,5 @@ print(f"Confusion Matrix:\n{conf_matrix}")
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-```
+
 
